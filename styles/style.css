@@ -1,0 +1,48 @@
+:root {
+    --accent-color: rgb(59, 55, 35);
+    --dark1: rgba(0, 0, 0, 0.1);
+    --dark2: rgba(0, 0, 0, 0.2);
+    --dark3: rgba(0, 0, 0, 0.3);
+    --white-color: #E8D8C4;
+    --light-color: #C7B7A3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.5)),
+        url(../assets/images/photos/painting1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    background-color: rgb(59, 55, 35);
+    font-family: GaramB;
+    color: rgb(53, 49, 32);
+    padding-left: 350px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../assets/images/photos/painting1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+}
