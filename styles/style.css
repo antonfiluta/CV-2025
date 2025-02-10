@@ -1,5 +1,6 @@
 :root {
     --accent-color: rgb(59, 55, 35);
+    /* #3b3723 */
     --dark1: rgba(0, 0, 0, 0.1);
     --dark2: rgba(0, 0, 0, 0.2);
     --dark3: rgba(0, 0, 0, 0.3);
@@ -11,6 +12,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -26,7 +32,11 @@ body {
     background-color: rgb(59, 55, 35);
     font-family: GaramB;
     color: rgb(53, 49, 32);
-    padding-left: 350px;
+    overflow-x: hidden;
+}
+
+body.blocked {
+    overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -45,4 +55,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0, 0.3);
     border-radius: 10px;
+}
+
+
+@media screen and (min-width: 851px) {
+    body.blocked {
+        overflow-y: scroll;
+    } 
 }

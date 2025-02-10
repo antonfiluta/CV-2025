@@ -1,0 +1,123 @@
+.content__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100dvh;
+    padding: 40px 0.8rem;
+}
+
+.content {
+    width: 100%;
+    padding: 1rem 1rem;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 30%, rgba(255, 255, 255, 0.2));
+    border-radius: 0.6rem;
+    transition: 0.6s ease 0s;
+    box-shadow: -2px -2px 15px -6px var(--accent-color), 2px 2px 15px -8px #C7B7A3;
+    transform: translate(-150%, 0) scale(0);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+._active {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+}
+
+.content__title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-family: GaramT;
+}
+
+.content__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    filter: brightness(0.7);
+}
+
+.content__chunk {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+}
+
+.content__subtitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.content__text {
+    font-family: GaramT;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+
+
+
+/* #contact */
+
+.contact__box {
+    display: flex;
+    align-items: center;
+}
+
+.contact__img {
+    width: 0.7rem;   
+}
+
+.contact__name {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: 0 8px 0 10px;
+}
+
+.contact__value {
+    font-size: 0.8rem;
+    letter-spacing: 0.7px;
+}
+
+
+
+
+
+/* @media */
+
+@media screen and (max-width: 849px) {
+    .content__wrapper {
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    .content__wrapper {
+        padding-left: 350px;
+    }
+}
+
+
+@media screen and (min-width: 1244px) {
+    .content__wrapper {
+        padding-left: 30vw;
+    }
+}
