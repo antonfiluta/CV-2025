@@ -92,3 +92,4 @@ const sidebar_controler = () => {
 
 build_buttons()
 add_animations()
+html_elmets.close.click()
