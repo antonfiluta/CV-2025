@@ -56,10 +56,6 @@
     gap: 0.8rem;
 }
 
-.content__flex.skills .content__subtitle {
-    font-size: 1.2rem;
-} 
-
 .content__chunk {
     display: flex;
     flex-direction: column;
@@ -74,9 +70,10 @@
 }
 
 .content__subtitle {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-align: left;
+    font-family: GaramT;
 }
 
 .content__text {
@@ -85,33 +82,41 @@
     text-align: justify;
 }
 
+#Skills .content__text {
+    text-align: left;
+}
+
 
 
 
 
 /* #contact */
 
-.contact__box {
-    display: inline-flex;
-    align-items: center;
+.contacts__wrapper {
+    display: grid;
     width: min-content;
+    grid-template-columns: 1rem 1fr 1fr;
+    gap: 0.6rem 0.4rem;
+}
+
+.contacts__wrapper .content__text {
+    font-size: 1.15rem;
+}
+
+.contacts__wrapper .content__text:nth-of-type(odd) {
+    letter-spacing: 1px;
+}
+
+.contacts__wrapper .content__text:nth-of-type(even) {
+    font-style: italic;
+    text-align: right;
 }
 
 .contact__img {
     width: 1rem;   
 }
 
-.contact__name {
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    margin: 0 8px 0 10px;
-}
 
-.contact__value {
-    font-size: 0.8rem;
-    letter-spacing: 0.7px;
-    text-wrap: nowrap;
-}
 
 
 
