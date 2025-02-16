@@ -85,6 +85,8 @@
     font-family: GaramT;
     font-size: 1.05rem;
     text-align: justify;
+    text-decoration: none;
+    color: var(--accent-color);
 }
 
 #Skills .content__text {
