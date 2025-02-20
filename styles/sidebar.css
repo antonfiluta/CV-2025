@@ -62,7 +62,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 2.8rem;
 }
 
 .profile__img__abs {
@@ -129,22 +129,22 @@
 }
 
 .profile__name {
-    font-size: 34px;
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1vw;
 }
 
 .profile__profession {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-family: GaramT;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.9vw;
     text-transform: uppercase;
     margin-bottom: 17px;
 }
 
 .profile__slogan {
-    font-size: 20px;
-    letter-spacing: 1.2px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
 }
 
 
@@ -152,9 +152,23 @@
     .sidebar {
         width: 350px;
     }
+
+    .profile__name {
+        font-size: 30px;
+        letter-spacing: 3.8px;
+    }
+    
+    .profile__profession {
+        font-size: 17px;
+        letter-spacing: 3.3px;
+        margin-bottom: 8px;
+    }
+    
+    .profile__slogan {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
 }
-
-
 
 @media screen and (min-width: 851px) {
     .sidebar__cross {
@@ -169,8 +183,6 @@
     }
 }
 
-
-
 @media screen and (min-width: 1244px) {
     .sidebar {
         width: 30vw;
@@ -179,5 +191,74 @@
     .sidebar.hidden {
         width: 30vw;
         opacity: 1;
+    }
+
+    .profile__name {
+        font-size: 2.4vw;
+        letter-spacing: 0.5vw;
+    }
+    
+    .profile__profession {
+        font-size: 1.2vw;
+        letter-spacing: 0.4vw;
+        margin-bottom: 8px;
+    }
+    
+    .profile__slogan {
+        font-size: 1.3vw;
+        letter-spacing: 0.2vw;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .profile__img__button img {
+        width: 2rem;
+    }
+
+    .profile__img__button:nth-child(3) {
+        top: -16.5%;
+        left: 35%;
+        transform: scale(0.98);
+    }
+    
+    .profile__img__button:nth-child(4) {
+        top: -8.5%;
+        left: 21%;
+        transform: scale(1.03);
+    }
+    
+    .profile__img__button:nth-child(5) {
+        top: 9%;
+        left: 11%;
+        transform: scale(0.98);
+    }
+    
+    .profile__img__button:nth-child(6) {
+        top: 29%;
+        left: 6%;
+        transform: scale(0.95);
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+    .sidebar {
+        width: 600px;
+    }
+
+    .profile__name {
+        font-size: 43px;
+        letter-spacing: 12px;
+    }
+    
+    .profile__profession {
+        font-size: 22px;
+        letter-spacing: 10px;
+    }
+    
+    .profile__slogan {
+        font-size: 22px;
+        letter-spacing: 6px;
     }
 }
